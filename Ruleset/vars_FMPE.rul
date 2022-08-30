@@ -10,7 +10,7 @@ enableNewResearchSorting: true
 maxLookVariant: 15
 showDogfightDistanceInKm: true
 crewEmergencyEvacuationSurvivalChance: 97
-# surrenderMode: 2
+surrenderMode: 2
 noLOSAccuracyPenaltyGlobal: 50
 oneHandedPenaltyGlobal: 50
 tooMuchSmokeThreshold: 13
