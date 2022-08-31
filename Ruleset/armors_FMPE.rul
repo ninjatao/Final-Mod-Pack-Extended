@@ -1810,20 +1810,6 @@
       reactions: 0.4 # bonus for snazziness
     meleeDodgeBackPenalty: 0.5
     recovery:
-      morale:
-        flatHundred: -0.1
-        manaNormalized: 14.0
-      time:
-        tu: 0.5
-        manaNormalized: 125.0
-      energy:
-        manaNormalized: 30 # bonus for snazziness
-        healthCurrent: 0.25
-      stun: &StandardAgentStunRes
-        healthCurrent: 0.06
-        health: -0.09
-        stunCurrent: 0.036
-        manaNormalized: 8.0
       health:
         stunNormalized: -0.1
     overKill: 1.5
@@ -1998,16 +1984,6 @@
       reactions: 0.3
     meleeDodgeBackPenalty: 0.5
     recovery:
-      morale:
-        flatHundred: -0.1
-        manaNormalized: 14.0
-      time:
-        tu: 0.5
-        manaNormalized: 125.0
-      energy:
-        manaNormalized: 18
-        healthCurrent: 0.25
-      stun: *StandardAgentStunRes
       health:
         stunNormalized: -0.1
     overKill: 1.5
@@ -2060,20 +2036,6 @@
       reactions: 0.5
     meleeDodgeBackPenalty: 0.5
     recovery:
-      morale:
-        flatHundred: -0.1
-        manaNormalized: 14.0
-      time:
-        tu: 0.5
-        manaNormalized: 125.0
-      energy:
-        manaNormalized: 60
-        healthCurrent: 0.25
-      stun:
-        healthCurrent: 0.12
-        health: -0.09
-        stunCurrent: 0.036
-        manaNormalized: 8.0
       health:
         stunNormalized: -0.1
     overKill: 1.5
@@ -2247,16 +2209,6 @@
       flatHundred: 0.2
     meleeDodgeBackPenalty: 0.5
     recovery:
-      morale:
-        flatHundred: -0.1
-        manaNormalized: 14.0
-      time:
-        tu: 0.5
-        manaNormalized: 125.0
-      energy:
-        manaNormalized: 40
-        healthCurrent: 0.25
-      stun: *StandardAgentStunRes
       health:
         stunNormalized: -0.1
     overKill: 1.5
@@ -2584,16 +2536,6 @@
       reactions: 0.35
     meleeDodgeBackPenalty: 0.5
     recovery:
-      morale:
-        flatHundred: -0.1
-        manaNormalized: 14.0
-      time:
-        tu: 0.5
-        manaNormalized: 125.0
-      energy:
-        manaNormalized: 40
-        healthCurrent: 0.25
-      stun: *StandardAgentStunRes
       health:
         stunNormalized: -0.1
     overKill: 1.5
@@ -2651,16 +2593,6 @@
     underArmor: 5
     psiDefence: *StandardDynamicPsiDefence
     recovery:
-      morale:
-        flatHundred: -0.05
-        manaNormalized: 14.0
-      time:
-        tu: 0.5
-        manaNormalized: 125.0
-      energy:
-        manaNormalized: 60
-        healthCurrent: 0.25
-      stun: *StandardAgentStunRes
       health:
         stunNormalized: -0.1
     movementType: 0
@@ -3463,16 +3395,6 @@
     underArmor: 90
     psiDefence: *StandardDynamicPsiDefence
     recovery:
-      morale:
-        flatHundred: -0.1
-        manaNormalized: 14.0
-      time:
-        tu: 0.5
-        manaNormalized: 125.0
-      energy:
-        manaNormalized: 25
-        healthCurrent: 0.25
-      stun: *StandardAgentStunRes
       health:
         stunNormalized: -0.1
     overKill: 1.5
@@ -3651,16 +3573,6 @@
     meleeDodge:
       reactions: 0.2
     recovery:
-      morale:
-        flatHundred: -0.1
-        manaNormalized: 14.0
-      time:
-        tu: 0.5
-        manaNormalized: 125.0
-      energy:
-        manaNormalized: 12 # penalty for discomfort
-        healthCurrent: 0.25
-      stun: *StandardAgentStunRes
       health:
         stunNormalized: -0.1
     overKill: 1.5
@@ -3839,16 +3751,6 @@
     meleeDodge:
       reactions: 0.15
     recovery:
-      morale:
-        flatHundred: -0.1
-        manaNormalized: 14.0
-      time:
-        tu: 0.5
-        manaNormalized: 125.0
-      energy:
-        manaNormalized: 10 # penalty for discomfort
-        healthCurrent: 0.25
-      stun: *StandardAgentStunRes
       health:
         stunNormalized: -0.1
     overKill: 1.5
@@ -3890,20 +3792,6 @@
     underArmor: 9
     psiDefence: *StandardDynamicPsiDefence
     recovery:
-      morale:
-        flatHundred: -0.1
-        manaNormalized: 14.0
-      time:
-        tu: 0.5
-        manaNormalized: 125.0
-      energy:
-        manaNormalized: 0.0 # penalty for discomfort
-        healthCurrent: 0.25
-      stun:
-        healthCurrent: 0.04
-        health: -0.024
-        stunCurrent: 0.036
-        manaNormalized: 8.0
       health:
         stunNormalized: -0.1
     overKill: 1.5
@@ -3945,20 +3833,6 @@
     underArmor: 25
     psiDefence: *StandardDynamicPsiDefence
     recovery:
-      morale:
-        flatHundred: -0.1
-        manaNormalized: 14.0
-      time:
-        tu: 0.5
-        manaNormalized: 125.0
-      energy:
-        manaNormalized: 15 # penalty for discomfort
-        healthCurrent: 0.25
-      stun:
-        healthCurrent: 0.04
-        health: -0.024
-        stunCurrent: 0.036
-        manaNormalized: 8.0
       health:
         stunNormalized: -0.1
     overKill: 1.5
@@ -4133,16 +4007,6 @@
       reactions: 0.35 # bonus for snazziness, but not as good as Jumpsuit
     meleeDodgeBackPenalty: 0.5
     recovery:
-      morale:
-        flatHundred: -0.1
-        manaNormalized: 14.0
-      time:
-        tu: 0.5
-        manaNormalized: 125.0
-      energy:
-        manaNormalized: 30 # bonus for snazziness
-        healthCurrent: 0.25
-      stun: *StandardAgentStunRes
       health:
         stunNormalized: -0.1
     overKill: 1.5
@@ -4317,16 +4181,6 @@
       reactions: 0.3
     meleeDodgeBackPenalty: 0.5
     recovery:
-      morale:
-        flatHundred: -0.1
-        manaNormalized: 14.0
-      time:
-        tu: 0.5
-        manaNormalized: 125.0
-      energy:
-        manaNormalized: 18
-        healthCurrent: 0.25
-      stun: *StandardAgentStunRes
       health:
         stunNormalized: -0.1
     overKill: 1.5
