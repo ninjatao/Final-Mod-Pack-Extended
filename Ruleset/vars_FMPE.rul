@@ -65,12 +65,12 @@ soldiersPerSergeant: 5
 soldiersPerCaptain: 11
 soldiersPerColonel: 23
 soldiersPerCommander: 30
-# mana:
-#   enabled: true
-#   battleUI: true
-#   trainingPrimary: true
-#   trainingSecondary: true
-#   replenishAfterMission: false
+mana:
+  enabled: true
+  battleUI: true
+  trainingPrimary: true
+  trainingSecondary: true
+  replenishAfterMission: false
 constants:
   extendedTerrainMelee: 4
 #  extendedUnderwaterThrowFactor: 60
