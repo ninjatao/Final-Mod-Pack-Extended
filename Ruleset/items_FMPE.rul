@@ -1242,33 +1242,19 @@
     bigSprite: 90
     bulletSprite: 3
     fireSound: 80
-    compatibleAmmo:
-      - STR_SCOUT_DRONE_AMMO
     accuracyAimed: 150
     tuAimed: 40
-    battleType: 1
+    hitSound: 81
+    hitAnimation: 26
+    power: 50
+    damageType: 1
+    battleType: 2
     fixedWeapon: true
+    clipSize: 6
     invWidth: 2
     invHeight: 3
     aimRange: 5
     dropoff: 6
-  - type: STR_SCOUT_DRONE_AMMO
-    categories: [STR_HUMAN_TECH, STR_AUXILIARY, STR_SPACE, STR_CLIPS]
-    size: 0.1
-    costBuy: 100
-    costSell: 50
-    transferTime: 12
-    weight: 4
-    bigSprite: 91
-    floorSprite: 12
-    hitSound: 81
-    hitAnimation: 26
-    power: 50
-    clipSize: 6
-    damageType: 1
-    battleType: 2
-    invWidth: 2
-    invHeight: 1
   - type: STR_HWP_SMOKE
     weight: 0
     bigSprite: 92
@@ -1966,8 +1952,6 @@
       IgnoreOverKill: false
   - type: STR_SCOUT_DRONE
     categories: [STR_HUMAN_TECH, STR_AUXILIARY, STR_SPACE, STR_LAND]
-    compatibleAmmo:
-      - STR_SCOUT_DRONE_AMMO
   - type: STR_TANK_ROCKET_LAUNCHER
     categories: [STR_XCOM_TECH, STR_AUXILIARY, STR_SPACE, STR_LAND]
   - type: STR_HWP_ROCKETS

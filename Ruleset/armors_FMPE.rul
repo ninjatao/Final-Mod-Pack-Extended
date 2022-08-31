@@ -5378,10 +5378,6 @@
       - 0.0
       - 0.0
     builtInWeapons:
-      - STR_SCOUT_DRONE_SHOTGUN
-      - STR_SCOUT_DRONE_AMMO
-      - STR_HWP_SMOKE
-      - STR_HWP_SMOKE_CLIP
       - INV_NULL_2X1_LEFT_SHOULDER
       - INV_NULL_2X1_RIGHT_SHOULDER
       - INV_NULL_2X1_LEFT_LEG
