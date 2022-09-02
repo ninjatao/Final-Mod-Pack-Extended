@@ -124,11 +124,9 @@
       bravery: 0.2
     drawingRoutine: 7
     recovery:
-      mana:
-        flatHundred: 0.1
       health:
         stunNormalized: -0.1
-      energy:
+      energy: &StandardEnergyRecovery
         flatHundred: 0.1
         healthCurrent: 0.25
       stun:
@@ -220,13 +218,9 @@
     movementType: 1
     drawingRoutine: 4
     recovery:
-      mana:
-        flatHundred: 0.1
       health:
         stunNormalized: -0.1
-      energy:
-        flatHundred: 0.1
-        healthCurrent: 0.25
+      energy: *StandardEnergyRecovery
       stun:
         healthCurrent: 0.1
         health: -0.05
@@ -269,13 +263,9 @@
     movementType: 1
     drawingRoutine: 4
     recovery:
-      mana:
-        flatHundred: 0.1
       health:
         stunNormalized: -0.1
-      energy:
-        flatHundred: 0.1
-        healthCurrent: 0.25
+      energy: *StandardEnergyRecovery
       stun:
         healthCurrent: 0.1
         health: -0.05
@@ -302,13 +292,9 @@
     movementType: 1
     drawingRoutine: 4
     recovery:
-      mana:
-        flatHundred: 0.1
       health:
         stunNormalized: -0.1
-      energy:
-        flatHundred: 0.1
-        healthCurrent: 0.25
+      energy: *StandardEnergyRecovery
       stun:
         healthCurrent: 0.1
         health: -0.05
@@ -335,13 +321,9 @@
     movementType: 1
     drawingRoutine: 4
     recovery:
-      mana:
-        flatHundred: 0.1
       health:
         stunNormalized: -0.1
-      energy:
-        flatHundred: 0.1
-        healthCurrent: 0.25
+      energy: *StandardEnergyRecovery
       stun:
         healthCurrent: 0.1
         health: -0.05
@@ -364,11 +346,7 @@
     underArmor: 10
     psiDefence: *StandardDynamicPsiDefence
     recovery:
-      mana:
-        flatHundred: 0.1
-      energy:
-        flatHundred: 0.1
-        healthCurrent: 0.25
+      energy: *StandardEnergyRecovery
       stun:
         healthCurrent: 0.1
         health: -0.05
@@ -409,11 +387,7 @@
     underArmor: 5
     psiDefence: *StandardDynamicPsiDefence
     recovery:
-      mana:
-        flatHundred: 0.1
-      energy:
-        flatHundred: 0.1
-        healthCurrent: 0.25
+      energy: *StandardEnergyRecovery
       stun:
         healthCurrent: 0.1
         health: -0.05
@@ -454,11 +428,7 @@
     underArmor: 5
     psiDefence: *StandardDynamicPsiDefence
     recovery:
-      mana:
-        flatHundred: 0.1
-      energy:
-        flatHundred: 0.1
-        healthCurrent: 0.25
+      energy: *StandardEnergyRecovery
       stun:
         healthCurrent: 0.1
         health: -0.05
@@ -499,11 +469,7 @@
     underArmor: 5
     psiDefence: *StandardDynamicPsiDefence
     recovery:
-      mana:
-        flatHundred: 0.1
-      energy:
-        flatHundred: 0.1
-        healthCurrent: 0.25
+      energy: *StandardEnergyRecovery
       stun:
         healthCurrent: 0.1
         health: -0.05
@@ -544,11 +510,7 @@
     underArmor: 5
     psiDefence: *StandardDynamicPsiDefence
     recovery:
-      mana:
-        flatHundred: 0.1
-      energy:
-        flatHundred: 0.1
-        healthCurrent: 0.25
+      energy: *StandardEnergyRecovery
       stun:
         healthCurrent: 0.1
         health: -0.05
@@ -589,11 +551,7 @@
     underArmor: 5
     psiDefence: *StandardDynamicPsiDefence
     recovery:
-      mana:
-        flatHundred: 0.1
-      energy:
-        flatHundred: 0.1
-        healthCurrent: 0.25
+      energy: *StandardEnergyRecovery
       stun:
         healthCurrent: 0.1
         health: -0.05
@@ -633,11 +591,7 @@
     underArmor: 5
     psiDefence: *StandardDynamicPsiDefence
     recovery:
-      mana:
-        flatHundred: 0.1
-      energy:
-        flatHundred: 0.1
-        healthCurrent: 0.25
+      energy: *StandardEnergyRecovery
       stun:
         healthCurrent: 0.1
         health: -0.05
@@ -678,11 +632,7 @@
     underArmor: 5
     psiDefence: *StandardDynamicPsiDefence
     recovery:
-      mana:
-        flatHundred: 0.1
-      energy:
-        flatHundred: 0.1
-        healthCurrent: 0.25
+      energy: *StandardEnergyRecovery
       stun:
         healthCurrent: 0.1
         health: -0.05
@@ -712,9 +662,7 @@
       flatHundred: 0.2
     meleeDodgeBackPenalty: 0.5
     recovery:
-      mana:
-        flatHundred: 0.1
-      energy:
+      energy: &PowerSuitEnergyRecovery
         flatHundred: 0.2
         healthCurrent: 0.25
       stun:
@@ -765,11 +713,7 @@
       reactions: 0.35
     meleeDodgeBackPenalty: 0.5
     recovery:
-      mana:
-        flatHundred: 0.1
-      energy:
-        flatHundred: 0.2
-        healthCurrent: 0.25
+      energy: *PowerSuitEnergyRecovery
       stun:
         healthCurrent: 0.1
         health: -0.05
@@ -812,11 +756,7 @@
     underArmor: 25
     psiDefence: *StandardDynamicPsiDefence
     recovery:
-      mana:
-        flatHundred: 0.1
-      energy:
-        flatHundred: 0.1
-        healthCurrent: 0.25
+      energy: *StandardEnergyRecovery
       stun:
         healthCurrent: 0.1
         health: -0.05
@@ -989,13 +929,9 @@
       psiSkill: 0.4
       moraleCurrent: 0.33
     recovery:
-      mana:
-        flatHundred: 0.1
       health:
         stunNormalized: -0.1
-      energy:
-        flatHundred: 0.1
-        healthCurrent: 0.25
+      energy: *StandardEnergyRecovery
       stun:
         healthCurrent: 0.1
         health: -0.05
@@ -1039,13 +975,9 @@
     underArmor: 28
     psiDefence: *MutonDynamicPsiDefence
     recovery:
-      mana:
-        flatHundred: 0.1
       health:
         stunNormalized: -0.1
-      energy:
-        flatHundred: 0.1
-        healthCurrent: 0.25
+      energy: *StandardEnergyRecovery
       stun:
         healthCurrent: 0.1
         health: -0.05
@@ -1073,13 +1005,9 @@
     underArmor: 28
     psiDefence: *MutonDynamicPsiDefence
     recovery:
-      mana:
-        flatHundred: 0.1
       health:
         stunNormalized: -0.1
-      energy:
-        flatHundred: 0.1
-        healthCurrent: 0.25
+      energy: *StandardEnergyRecovery
       stun:
         healthCurrent: 0.1
         health: -0.05
@@ -1109,13 +1037,9 @@
     underArmor: 28
     psiDefence: *MutonDynamicPsiDefence
     recovery:
-      mana:
-        flatHundred: 0.1
       health:
         stunNormalized: -0.1
-      energy:
-        flatHundred: 0.1
-        healthCurrent: 0.25
+      energy: *StandardEnergyRecovery
       stun:
         healthCurrent: 0.1
         health: -0.05
@@ -1141,13 +1065,9 @@
     underArmor: 4
     psiDefence: *StandardDynamicPsiDefence
     recovery:
-      mana:
-        flatHundred: 0.1
       health:
         stunNormalized: -0.1
-      energy:
-        flatHundred: 0.1
-        healthCurrent: 0.25
+      energy: *StandardEnergyRecovery
       stun:
         healthCurrent: 0.2
         health: -0.05
@@ -1190,13 +1110,9 @@
     underArmor: 4
     psiDefence: *StandardDynamicPsiDefence
     recovery:
-      mana:
-        flatHundred: 0.1
       health:
         stunNormalized: -0.1
-      energy:
-        flatHundred: 0.1
-        healthCurrent: 0.25
+      energy: *StandardEnergyRecovery
       stun:
         healthCurrent: 0.2
         health: -0.05
@@ -1221,13 +1137,9 @@
     underArmor: 28
     psiDefence: *StandardDynamicPsiDefence
     recovery:
-      mana:
-        flatHundred: 0.1
       health:
         stunNormalized: -0.1
-      energy:
-        flatHundred: 0.1
-        healthCurrent: 0.25
+      energy: *StandardEnergyRecovery
       stun:
         healthCurrent: 0.2
         health: -0.05
@@ -1270,13 +1182,9 @@
     drawingRoutine: 1
     movementType: 1
     recovery:
-      mana:
-        flatHundred: 0.1
       health:
         stunNormalized: -0.1
-      energy:
-        flatHundred: 0.1
-        healthCurrent: 0.25
+      energy: *StandardEnergyRecovery
       stun:
         healthCurrent: 0.1
         health: -0.05
@@ -1320,13 +1228,9 @@
     drawingRoutine: 1
     movementType: 1
     recovery:
-      mana:
-        flatHundred: 0.1
       health:
         stunNormalized: -0.1
-      energy:
-        flatHundred: 0.1
-        healthCurrent: 0.25
+      energy: *StandardEnergyRecovery
       stun:
         healthCurrent: 0.1
         health: -0.05
@@ -1354,13 +1258,9 @@
     drawingRoutine: 1
     movementType: 1
     recovery:
-      mana:
-        flatHundred: 0.1
       health:
         stunNormalized: -0.1
-      energy:
-        flatHundred: 0.1
-        healthCurrent: 0.25
+      energy: *StandardEnergyRecovery
       stun:
         healthCurrent: 0.1
         health: -0.05
@@ -1388,13 +1288,9 @@
     drawingRoutine: 1
     movementType: 1
     recovery:
-      mana:
-        flatHundred: 0.1
       health:
         stunNormalized: -0.1
-      energy:
-        flatHundred: 0.1
-        healthCurrent: 0.25
+      energy: *StandardEnergyRecovery
       stun:
         healthCurrent: 0.1
         health: -0.05
@@ -1422,13 +1318,9 @@
     drawingRoutine: 1
     movementType: 1
     recovery:
-      mana:
-        flatHundred: 0.1
       health:
         stunNormalized: -0.1
-      energy:
-        flatHundred: 0.1
-        healthCurrent: 0.25
+      energy: *StandardEnergyRecovery
       stun:
         healthCurrent: 0.1
         health: -0.05
@@ -1456,13 +1348,9 @@
     drawingRoutine: 1
     movementType: 1
     recovery:
-      mana:
-        flatHundred: 0.1
       health:
         stunNormalized: -0.1
-      energy:
-        flatHundred: 0.1
-        healthCurrent: 0.25
+      energy: *StandardEnergyRecovery
       stun:
         healthCurrent: 0.1
         health: -0.05
@@ -1490,14 +1378,10 @@
     drawingRoutine: 6
     movementType: 2
     recovery:
-      mana:
-        flatHundred: 0.1
       health:
         stunNormalized: -0.1
         flatHundred: 0.1
-      energy:
-        flatHundred: 0.1
-        healthCurrent: 0.25
+      energy: *StandardEnergyRecovery
       stun:
         healthCurrent: 0.1
         health: -0.05
@@ -1543,14 +1427,10 @@
     drawingRoutine: 6
     movementType: 2
     recovery:
-      mana:
-        flatHundred: 0.1
       health:
         stunNormalized: -0.1
         flatHundred: 0.1
-      energy:
-        flatHundred: 0.1
-        healthCurrent: 0.25
+      energy: *StandardEnergyRecovery
       stun:
         healthCurrent: 0.1
         health: -0.05
@@ -1580,14 +1460,10 @@
     drawingRoutine: 6
     movementType: 2
     recovery:
-      mana:
-        flatHundred: 0.1
       health:
         stunNormalized: -0.1
         flatHundred: 0.1
-      energy:
-        flatHundred: 0.1
-        healthCurrent: 0.25
+      energy: *StandardEnergyRecovery
       stun:
         healthCurrent: 0.1
         health: -0.05
@@ -1641,14 +1517,10 @@
     drawingRoutine: 6
     movementType: 2
     recovery:
-      mana:
-        flatHundred: 0.1
       health:
         stunNormalized: -0.1
         flatHundred: 0.1
-      energy:
-        flatHundred: 0.1
-        healthCurrent: 0.25
+      energy: *StandardEnergyRecovery
       stun:
         healthCurrent: 0.1
         health: -0.05
@@ -1810,8 +1682,14 @@
       reactions: 0.4 # bonus for snazziness
     meleeDodgeBackPenalty: 0.5
     recovery:
+      stun: &StandardAgentStunRes
+        healthCurrent: 0.06
+        health: -0.09
+        stunCurrent: 0.036
+        flatOne: 6.0
       health:
         stunNormalized: -0.1
+      energy: *StandardEnergyRecovery
     overKill: 1.5
     damageModifier: &JumpsuitResists
       - 1.0
@@ -1984,8 +1862,10 @@
       reactions: 0.3
     meleeDodgeBackPenalty: 0.5
     recovery:
+      stun: *StandardAgentStunRes
       health:
         stunNormalized: -0.1
+      energy: *StandardEnergyRecovery
     overKill: 1.5
     damageModifier: &PersonalArmorResists
       - 1.0
@@ -2036,8 +1916,14 @@
       reactions: 0.5
     meleeDodgeBackPenalty: 0.5
     recovery:
+      stun:
+        healthCurrent: 0.12
+        health: -0.09
+        stunCurrent: 0.036
+        flatOne: 6.0
       health:
         stunNormalized: -0.1
+      energy: *StandardEnergyRecovery
     overKill: 1.5
     damageModifier: &SynthsuitResists
       - 1.0
@@ -2209,8 +2095,10 @@
       flatHundred: 0.2
     meleeDodgeBackPenalty: 0.5
     recovery:
+      stun: *StandardAgentStunRes
       health:
         stunNormalized: -0.1
+      energy: *PowerSuitEnergyRecovery
     overKill: 1.5
     damageModifier: *AnchorPowerSuitRes
     specialWeapon: STR_UNARMED_POWER_SUIT
@@ -2536,8 +2424,10 @@
       reactions: 0.35
     meleeDodgeBackPenalty: 0.5
     recovery:
+      stun: *StandardAgentStunRes
       health:
         stunNormalized: -0.1
+      energy: *PowerSuitEnergyRecovery
     overKill: 1.5
     damageModifier: &AnchorStormtrooperSuitRes
       - 1.0
@@ -2593,8 +2483,10 @@
     underArmor: 5
     psiDefence: *StandardDynamicPsiDefence
     recovery:
+      stun: *StandardAgentStunRes
       health:
         stunNormalized: -0.1
+      energy: *StandardEnergyRecovery
     movementType: 0
     drawingRoutine: 4
     meleeDodge:
@@ -2644,13 +2536,9 @@
     underArmor: 4
     psiDefence: *StandardDynamicPsiDefence
     recovery:
-      mana:
-        flatHundred: 0.1
       health:
         stunNormalized: -0.1
-      energy:
-        flatHundred: 0.1
-        healthCurrent: 0.25
+      energy: *StandardEnergyRecovery
       stun:
         healthCurrent: 0.1
         health: -0.05
@@ -2734,10 +2622,9 @@
     underArmor: 5
     psiDefence: *StandardDynamicPsiDefence
     recovery:
-      mana:
-        flatHundred: 0.1
       health:
         stunNormalized: -0.2
+      energy: *StandardEnergyRecovery
     meleeDodge:
       reactions: 0.3
     meleeDodgeBackPenalty: 0.5
@@ -2777,10 +2664,9 @@
     underArmor: 6
     psiDefence: *StandardDynamicPsiDefence
     recovery:
-      mana:
-        flatHundred: 0.1
       health:
         stunNormalized: -0.2
+      energy: *StandardEnergyRecovery
     meleeDodge:
       reactions: 0.3
     meleeDodgeBackPenalty: 0.5
@@ -2820,10 +2706,9 @@
     underArmor: 7
     psiDefence: *StandardDynamicPsiDefence
     recovery:
-      mana:
-        flatHundred: 0.1
       health:
         stunNormalized: -0.2
+      energy: *StandardEnergyRecovery
     meleeDodge:
       reactions: 0.3
     meleeDodgeBackPenalty: 0.5
@@ -2864,10 +2749,9 @@
     psiDefence: *StandardDynamicPsiDefence
     drawingRoutine: 4
     recovery:
-      mana:
-        flatHundred: 0.1
       health:
         stunNormalized: -0.15
+      energy: *StandardEnergyRecovery
     meleeDodge:
       reactions: 0.2
     meleeDodgeBackPenalty: 0.0
@@ -2909,10 +2793,9 @@
     psiDefence: *StandardDynamicPsiDefence
     drawingRoutine: 4
     recovery:
-      mana:
-        flatHundred: 0.1
       health:
         stunNormalized: -0.15
+      energy: *StandardEnergyRecovery
     meleeDodge:
       reactions: 0.2
     meleeDodgeBackPenalty: 0.0
@@ -2954,10 +2837,9 @@
     psiDefence: *StandardDynamicPsiDefence
     drawingRoutine: 4
     recovery:
-      mana:
-        flatHundred: 0.1
       health:
         stunNormalized: -0.15
+      energy: *StandardEnergyRecovery
     meleeDodge:
       reactions: 0.2
     meleeDodgeBackPenalty: 0.0
@@ -3000,10 +2882,9 @@
     psiDefence: *StandardDynamicPsiDefence
     drawingRoutine: 4
     recovery:
-      mana:
-        flatHundred: 0.1
       health:
         stunNormalized: -0.15
+      energy: *StandardEnergyRecovery
     meleeDodge:
       reactions: 0.2
     meleeDodgeBackPenalty: 0.0
@@ -3140,11 +3021,7 @@
     underArmor: 1
     psiDefence: *StandardDynamicPsiDefence
     recovery:
-      mana:
-        flatHundred: 0.1
-      energy:
-        flatHundred: 0.1
-        healthCurrent: 0.25
+      energy: *StandardEnergyRecovery
       stun:
         healthCurrent: 0.1
         health: -0.05
@@ -3191,8 +3068,6 @@
     underArmor: 25
     psiDefence: *StandardDynamicPsiDefence
     recovery:
-      mana:
-        flatHundred: 0.1
       energy:
         flatHundred: 0.08
         healthCurrent: 0.25
@@ -3242,8 +3117,6 @@
     underArmor: 25
     psiDefence: *StandardDynamicPsiDefence
     recovery:
-      mana:
-        flatHundred: 0.1
       energy:
         flatHundred: 0.09
         healthCurrent: 0.25
@@ -3291,8 +3164,6 @@
     underArmor: 35
     psiDefence: *StandardDynamicPsiDefence
     recovery:
-      mana:
-        flatHundred: 0.1
       energy:
         flatHundred: 0.09
         healthCurrent: 0.25
@@ -3340,8 +3211,6 @@
     underArmor: 42
     psiDefence: *StandardDynamicPsiDefence
     recovery:
-      mana:
-        flatHundred: 0.1
       energy:
         flatHundred: 0.09
         healthCurrent: 0.25
@@ -3395,8 +3264,10 @@
     underArmor: 90
     psiDefence: *StandardDynamicPsiDefence
     recovery:
+      stun: *StandardAgentStunRes
       health:
         stunNormalized: -0.1
+      energy: *PowerSuitEnergyRecovery
     overKill: 1.5
     damageModifier: &AnchorJuggernautSuitRes
       - 1.0
@@ -3573,8 +3444,10 @@
     meleeDodge:
       reactions: 0.2
     recovery:
+      stun: *StandardAgentStunRes
       health:
         stunNormalized: -0.1
+      energy: *StandardEnergyRecovery
     overKill: 1.5
     damageModifier: &AlloyVestResists
       - 1.0
@@ -3751,8 +3624,10 @@
     meleeDodge:
       reactions: 0.15
     recovery:
+      stun: *StandardAgentStunRes
       health:
         stunNormalized: -0.1
+      energy: *StandardEnergyRecovery
     overKill: 1.5
     damageModifier: &ArmoredVestResists
       - 1.0
@@ -3792,8 +3667,14 @@
     underArmor: 9
     psiDefence: *StandardDynamicPsiDefence
     recovery:
+      stun:
+        healthCurrent: 0.04
+        health: -0.024
+        stunCurrent: 0.036
+        flatOne: 6.0
       health:
         stunNormalized: -0.1
+      energy: *StandardEnergyRecovery
     overKill: 1.5
     damageModifier: &HazmatResists
       - 1.0
@@ -3833,8 +3714,14 @@
     underArmor: 25
     psiDefence: *StandardDynamicPsiDefence
     recovery:
+      stun:
+        healthCurrent: 0.04
+        health: -0.024
+        stunCurrent: 0.036
+        flatOne: 6.0
       health:
         stunNormalized: -0.1
+      energy: *StandardEnergyRecovery
     overKill: 1.5
     damageModifier: &ToxiSuitResists
       - 1.0
@@ -4007,8 +3894,10 @@
       reactions: 0.35 # bonus for snazziness, but not as good as Jumpsuit
     meleeDodgeBackPenalty: 0.5
     recovery:
+      stun: *StandardAgentStunRes
       health:
         stunNormalized: -0.1
+      energy: *StandardEnergyRecovery
     overKill: 1.5
     damageModifier: &GravmoduleArmorResists
       - 1.0
@@ -4181,8 +4070,10 @@
       reactions: 0.3
     meleeDodgeBackPenalty: 0.5
     recovery:
+      stun: *StandardAgentStunRes
       health:
         stunNormalized: -0.1
+      energy: *StandardEnergyRecovery
     overKill: 1.5
     damageModifier: &JumpArmorResists
       - 1.0
@@ -4216,11 +4107,7 @@
     psiDefence: *StandardDynamicPsiDefence
     drawingRoutine: 4
     recovery:
-      mana:
-        flatHundred: 0.1
-      energy:
-        flatHundred: 0.1
-        healthCurrent: 0.25
+      energy: *StandardEnergyRecovery
       stun:
         healthCurrent: 0.1
         health: -0.05
@@ -4244,13 +4131,9 @@
     underArmor: 28
     psiDefence: *MutonDynamicPsiDefence
     recovery:
-      mana:
-        flatHundred: 0.1
       health:
         stunNormalized: -0.1
-      energy:
-        flatHundred: 0.1
-        healthCurrent: 0.25
+      energy: *StandardEnergyRecovery
       stun:
         healthCurrent: 0.1
         health: -0.05
@@ -4277,13 +4160,9 @@
     underArmor: 15
     psiDefence: *MutonDynamicPsiDefence
     recovery:
-      mana:
-        flatHundred: 0.1
       health:
         stunNormalized: -0.1
-      energy:
-        flatHundred: 0.1
-        healthCurrent: 0.25
+      energy: *StandardEnergyRecovery
       stun:
         healthCurrent: 0.1
         health: -0.05
@@ -4311,13 +4190,9 @@
     movementType: 1
     drawingRoutine: 4
     recovery:
-      mana:
-        flatHundred: 0.1
       health:
         stunNormalized: -0.1
-      energy:
-        flatHundred: 0.1
-        healthCurrent: 0.25
+      energy: *StandardEnergyRecovery
       stun:
         healthCurrent: 0.1
         health: -0.05
@@ -4343,13 +4218,9 @@
     movementType: 1
     drawingRoutine: 4
     recovery:
-      mana:
-        flatHundred: 0.1
       health:
         stunNormalized: -0.1
-      energy:
-        flatHundred: 0.1
-        healthCurrent: 0.25
+      energy: *StandardEnergyRecovery
       stun:
         healthCurrent: 0.1
         health: -0.05
@@ -4375,13 +4246,9 @@
     movementType: 1
     drawingRoutine: 4
     recovery:
-      mana:
-        flatHundred: 0.1
       health:
         stunNormalized: -0.1
-      energy:
-        flatHundred: 0.1
-        healthCurrent: 0.25
+      energy: *StandardEnergyRecovery
       stun:
         healthCurrent: 0.1
         health: -0.05
@@ -4407,13 +4274,9 @@
     psiDefence: *MutonDynamicPsiDefence
     drawingRoutine: 10
     recovery:
-      mana:
-        flatHundred: 0.1
       health:
         stunNormalized: -0.1
-      energy:
-        flatHundred: 0.1
-        healthCurrent: 0.25
+      energy: *StandardEnergyRecovery
       stun:
         healthCurrent: 0.1
         health: -0.05
@@ -4442,13 +4305,9 @@
     drawingRoutine: 4
     movementType: 1
     recovery:
-      mana:
-        flatHundred: 0.1
       health:
         stunNormalized: -0.1
-      energy:
-        flatHundred: 0.1
-        healthCurrent: 0.25
+      energy: *StandardEnergyRecovery
       stun:
         healthCurrent: 0.1
         health: -0.05
@@ -4491,13 +4350,9 @@
     drawingRoutine: 4
     movementType: 1
     recovery:
-      mana:
-        flatHundred: 0.1
       health:
         stunNormalized: -0.1
-      energy:
-        flatHundred: 0.1
-        healthCurrent: 0.25
+      energy: *StandardEnergyRecovery
       stun:
         healthCurrent: 0.1
         health: -0.05
@@ -4524,13 +4379,9 @@
     drawingRoutine: 4
     movementType: 1
     recovery:
-      mana:
-        flatHundred: 0.1
       health:
         stunNormalized: -0.1
-      energy:
-        flatHundred: 0.1
-        healthCurrent: 0.25
+      energy: *StandardEnergyRecovery
       stun:
         healthCurrent: 0.1
         health: -0.05
@@ -4557,13 +4408,9 @@
     constantAnimation: true
     movementType: 1
     recovery:
-      mana:
-        flatHundred: 0.1
       health:
         stunNormalized: -0.1
-      energy:
-        flatHundred: 0.1
-        healthCurrent: 0.25
+      energy: *StandardEnergyRecovery
       stun:
         healthCurrent: 0.1
         health: -0.05
@@ -4601,13 +4448,9 @@
     psiDefence: *StandardDynamicPsiDefence
     drawingRoutine: 10
     recovery:
-      mana:
-        flatHundred: 0.1
       health:
         stunNormalized: -0.1
-      energy:
-        flatHundred: 0.1
-        healthCurrent: 0.25
+      energy: *StandardEnergyRecovery
       stun:
         healthCurrent: 0.1
         health: -0.05
@@ -4647,13 +4490,9 @@
     drawingRoutine: 0
     movementType: 0
     recovery:
-      mana:
-        flatHundred: 0.1
       health:
         stunNormalized: -0.1
-      energy:
-        flatHundred: 0.1
-        healthCurrent: 0.25
+      energy: *StandardEnergyRecovery
       stun:
         healthCurrent: 0.1
         health: -0.05
@@ -4697,13 +4536,9 @@
     psiDefence: *StandardDynamicPsiDefence
     movementType: 0
     recovery:
-      mana:
-        flatHundred: 0.1
       health:
         stunNormalized: -0.1
-      energy:
-        flatHundred: 0.1
-        healthCurrent: 0.25
+      energy: *StandardEnergyRecovery
       stun:
         healthCurrent: 0.1
         health: -0.05
@@ -4748,13 +4583,9 @@
     psiDefence: *StandardDynamicPsiDefence
     movementType: 0
     recovery:
-      mana:
-        flatHundred: 0.1
       health:
         stunNormalized: -0.1
-      energy:
-        flatHundred: 0.1
-        healthCurrent: 0.25
+      energy: *StandardEnergyRecovery
       stun:
         healthCurrent: 0.1
         health: -0.05
@@ -4783,13 +4614,9 @@
     psiDefence: *StandardDynamicPsiDefence
     movementType: 0
     recovery:
-      mana:
-        flatHundred: 0.1
       health:
         stunNormalized: -0.1
-      energy:
-        flatHundred: 0.1
-        healthCurrent: 0.25
+      energy: *StandardEnergyRecovery
       stun:
         healthCurrent: 0.1
         health: -0.05
@@ -4824,13 +4651,9 @@
     drawingRoutine: 5
     size: 2
     recovery:
-      mana:
-        flatHundred: 0.1
       health:
         stunNormalized: -0.1
-      energy:
-        flatHundred: 0.1
-        healthCurrent: 0.25
+      energy: *StandardEnergyRecovery
       stun:
         healthCurrent: 0.1
         health: -0.05
@@ -4880,13 +4703,9 @@
     fearImmune: false
     createsMeleeThreat: true
     recovery:
-      mana:
-        flatHundred: 0.1
       health:
         stunNormalized: -0.1
-      energy:
-        flatHundred: 0.1
-        healthCurrent: 0.25
+      energy: *StandardEnergyRecovery
       stun:
         healthCurrent: 0.1
         health: -0.05
@@ -4924,10 +4743,9 @@
     psiDefence: *StandardDynamicPsiDefence
     drawingRoutine: 10
     recovery:
-      mana:
-        flatHundred: 0.1
       health:
         stunNormalized: -0.05
+      energy: *StandardEnergyRecovery
     overKill: 1.5
     damageModifier: &GazerResists
       - 1.0
@@ -4963,10 +4781,9 @@
     psiDefence: *StandardDynamicPsiDefence
     drawingRoutine: 10
     recovery:
-      mana:
-        flatHundred: 0.1
       health:
         stunNormalized: -0.05
+      energy: *StandardEnergyRecovery
     overKill: 1.5
     allowsKneeling: true
     damageModifier: *GazerResists
@@ -4987,10 +4804,9 @@
     psiDefence: *StandardDynamicPsiDefence
     drawingRoutine: 10
     recovery:
-      mana:
-        flatHundred: 0.1
       health:
         stunNormalized: -0.05
+      energy: *StandardEnergyRecovery
     overKill: 1.5
     allowsKneeling: true
     damageModifier: *GazerResists
@@ -5012,10 +4828,9 @@
     constantAnimation: true
     movementType: 1
     recovery:
-      mana:
-        flatHundred: 0.1
       health:
         stunNormalized: -0.2
+      energy: *StandardEnergyRecovery
     createsMeleeThreat: false
     overKill: 1.5
     damageModifier:
@@ -5051,10 +4866,9 @@
     drawingRoutine: 1
     movementType: 1
     recovery:
-      mana:
-        flatHundred: 0.1
       health:
         stunNormalized: -0.02
+      energy: *StandardEnergyRecovery
     meleeDodge:
       reactions: 0.5
     meleeDodgeBackPenalty: 0.5
@@ -5094,10 +4908,9 @@
     drawingRoutine: 1
     movementType: 1
     recovery:
-      mana:
-        flatHundred: 0.1
       health:
         stunNormalized: -0.02
+      energy: *StandardEnergyRecovery
     meleeDodge:
       reactions: 0.5
     meleeDodgeBackPenalty: 0.5
@@ -5122,10 +4935,9 @@
     drawingRoutine: 1
     movementType: 1
     recovery:
-      mana:
-        flatHundred: 0.1
       health:
         stunNormalized: -0.02
+      energy: *StandardEnergyRecovery
     meleeDodge:
       reactions: 0.5
     meleeDodgeBackPenalty: 0.5
@@ -5150,10 +4962,9 @@
     drawingRoutine: 1
     movementType: 1
     recovery:
-      mana:
-        flatHundred: 0.1
       health:
         stunNormalized: -0.02
+      energy: *StandardEnergyRecovery
     meleeDodge:
       reactions: 0.5
     meleeDodgeBackPenalty: 0.5
@@ -5178,10 +4989,9 @@
     drawingRoutine: 1
     movementType: 1
     recovery:
-      mana:
-        flatHundred: 0.1
       health:
         stunNormalized: -0.02
+      energy: *StandardEnergyRecovery
     meleeDodge:
       reactions: 0.5
     meleeDodgeBackPenalty: 0.5
@@ -5242,13 +5052,9 @@
     psiDefence: *StandardDynamicPsiDefence
     drawingRoutine: 8
     recovery:
-      mana:
-        flatHundred: 0.1
       health:
         stunNormalized: -0.1
-      energy:
-        flatHundred: 0.1
-        healthCurrent: 0.25
+      energy: *StandardEnergyRecovery
       stun:
         healthCurrent: 0.1
         health: -0.05
@@ -5292,13 +5098,9 @@
     drawingRoutine: 9
     constantAnimation: true
     recovery:
-      mana:
-        flatHundred: 0.1
       health:
         stunNormalized: -0.1
-      energy:
-        flatHundred: 0.1
-        healthCurrent: 0.25
+      energy: *StandardEnergyRecovery
       stun:
         healthCurrent: 0.1
         health: -0.05
@@ -5358,7 +5160,6 @@
     psiDefence: *MachineDynamicPsiDefence
     allowsRunning: false
     allowsKneeling: false
-    instantWoundRecovery: true
     overKill: 1.5
     damageModifier:
       - 1.0
