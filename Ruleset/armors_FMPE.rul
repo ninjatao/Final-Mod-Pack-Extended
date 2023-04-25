@@ -5269,10 +5269,6 @@
     drawingRoutine: 5
     size: 2
     overKill: 1.5
-    recovery:
-      energy:
-        energyRegen: 0.0
-        flatHundred: 1.00
     allowsRunning: true
     allowsKneeling: false
     damageModifier: *SectopodResists
@@ -5312,10 +5308,6 @@
     drawingRoutine: 5
     size: 2
     overKill: 1.5
-    recovery:
-      energy:
-        energyRegen: 0.0
-        flatHundred: 1.00
     allowsRunning: true
     allowsKneeling: false
     damageModifier: *SectopodResists
